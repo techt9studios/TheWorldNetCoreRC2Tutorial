@@ -5,13 +5,13 @@
 }
 
 @section Scripts {
-    <script src="~/lib/jquery-validation/dist/additional-methods.min.js"></script>
-    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script type="text/javascript" src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
 }
 <h2>Contact</h2>
 
 <form>
-    <div asp-validation-summary="ValidationSummary.ModelOnly"></div>
+    @*<div asp-validation-summary="ValidationSummary.ModelOnly"></div>*@
     <label asp-for="Name">Name</label>
     <input asp-for="Name"/>
     <span asp-validation-for="Name"></span>
